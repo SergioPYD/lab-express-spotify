@@ -1,0 +1,19 @@
+<div>
+
+<h1>Albumes for: {{this.artistName}}</h1>
+
+<div class="cuadrados">
+{{#each this.albums}}
+<div id="column">
+<div><img id="imagen" src="{{this.images.[0].url}}" alt="" width="300px"></div>
+
+<div id="center">
+ <h4>{{this.name}}</h4>
+<a href="/albums/tracks/{{this.id}}"><button class="botonTwo">View Tracks </button></a>   
+</div>
+</div>
+{{/each}}
+
+
+</div>
+</div>

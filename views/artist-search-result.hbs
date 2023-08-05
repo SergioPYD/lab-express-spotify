@@ -1,0 +1,15 @@
+<div>
+
+<h1>Estos son los resultados de la busqueda </h1>
+<div class="cuadrados">
+{{#each this.artist}}
+<div id="column">
+    <div><img id="imagen" src={{this.images.[0].url}} alt="" width="300px"></div>
+<div id="center"><h4>{{this.name}}</h4>
+<a href="/albums/{{this.id}}"><button class="botonTwo">View Albums</button></a></div>
+</div>
+
+{{/each}}
+</div>
+
+</div>

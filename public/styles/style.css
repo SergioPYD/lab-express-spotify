@@ -1,5 +1,7 @@
 body {
-  background-color: black;
+  background-color: white;
+  color: black;
+  margin:0px;
 }
 
 #background {
@@ -43,7 +45,7 @@ border-style: none;
    
 }
 
-#boton {
+.boton {
     height: 27px;
     width: 170px;
     border-style: none;
@@ -54,4 +56,65 @@ h1{
     text-decoration: overline;
     color: black;
     text-transform:uppercase;
+    text-align: center;
+}
+
+#audio audio{
+
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+}
+
+nav {
+  height: 50px;
+  background-color: wheat;
+  color: black;
+display: flex;
+justify-content: center;
+align-items: center;
+text-decoration: none;
+border-bottom: 2px solid #000;
+}
+nav a:hover{
+  color:gray;
+}
+
+.cuadrados {
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap:20px;
+  justify-content: center;
+}
+
+#column{
+display: flex;
+flex-direction: column;
+justify-content: center;
+background-color: grey;
+
+}
+
+#column h4,a{
+color:white;
+  display: flex;
+  justify-content: center;
+  margin: 4px;
+  text-decoration: none;
+
+ 
+}
+
+.botonTwo {
+  height: 27px;
+  width: 100px;
+  border-style: none;
+  background-color: rgba(226, 42, 42, 0.902);
+  color: white
+}
+
+#tracks audio,p{
+margin-left: 200px;
 }
